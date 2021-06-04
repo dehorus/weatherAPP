@@ -84,8 +84,9 @@ background: linear-gradient(to top, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Fir
   text-align: center;
 }
 
-.weather-box .weather {
+.weather {
   color: white;
+  text-align: center;
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
@@ -94,4 +95,25 @@ background: linear-gradient(to top, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Fir
 .weather-box .icon-weather {
   margin-top: 1em;
   width: 30%;
+}
+
+@media (min-width: 740px) {
+  main {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .weather-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 2em;
+  }
+
+  .weather-box .temperature {
+    margin: 0;
+  }
 }
