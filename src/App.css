@@ -1,0 +1,97 @@
+main {
+  width: 100%;
+}
+
+.app {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background: #616161;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.app.warm {
+  background: #FF416C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.search-box {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 2em;
+}
+
+.search-box input {
+  background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    display: block;
+    padding: 1em 0;
+    color: rgba(50, 50, 70, 0.5);
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align: center;
+    border-style: none;
+    border-radius: 25px;
+    transition: all 0.5s ease-in-out;
+}
+
+.search-box input::placeholder {
+  color: rgba(50, 50, 70, 0.5);
+  font-weight: 400;
+}
+
+.search-box input 
+:focus {
+  background-color: rgba(255,255,255, 0.75);
+}
+
+.location-box .location {
+  color: white;
+  margin-top: 1em;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.2em;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temperature {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius:1rem;
+
+  padding: 15px 25px;
+  color: white;
+  font-size: 85px;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+}
+
+.weather-box .weather {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box .icon-weather {
+  margin-top: 1em;
+  width: 30%;
+}
