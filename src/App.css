@@ -68,6 +68,10 @@ background: linear-gradient(to top, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Fir
 
 .weather-box {
   text-align: center;
+  width: 90%;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .weather-box .temperature {
@@ -93,8 +97,8 @@ background: linear-gradient(to top, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Fir
 }
 
 .weather-box .icon-weather {
-  margin-top: 1em;
   width: 30%;
+  margin: 1em auto;
 }
 
 @media (min-width: 740px) {
