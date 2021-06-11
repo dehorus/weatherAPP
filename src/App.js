@@ -46,7 +46,9 @@ function App() {
     <div className={(typeof weather.main != 'undefined' ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app')}>
       <main>
         <div className="search-box">
-          <input type="text" placeholder="Search..." onChange={e => setQuery(e.target.value)}
+          <h1>Weather App</h1>
+          <h2> <em> Please, </em> type a name of a city. </h2>
+          <input type="text" placeholder="Ej. Guadalajara" onChange={e => setQuery(e.target.value)}
           value={query}
           onKeyPress={search} />
         </div>
@@ -60,7 +62,9 @@ function App() {
           <img className="icon-weather" src={(weather.weather[0].main === "Clear") ? sun : clouds} alt="" />
           <div className="temperature">
             {Math.round(weather.main.temp)}°c
+            
           </div>
+          <span>Feels like: {Math.round(weather.main.feels_like)}</span>
         </div>
         <div className="weather">
             {weather.weather[0].main}

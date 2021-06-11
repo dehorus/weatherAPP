@@ -5,12 +5,21 @@ main {
 .app {
   width: 100%;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
   background: #616161;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.app h1, .app h2 {
+  color: white;
+  text-align: center;
+}
 
+.app span {
+  color: white;
+  font-size: 2rem;
+
+}
 .app.warm {
   background: #FF416C;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
@@ -94,6 +103,7 @@ background: linear-gradient(to top, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Fir
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  padding: 2rem 0;
 }
 
 .weather-box .icon-weather {
